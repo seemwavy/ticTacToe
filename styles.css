@@ -1,0 +1,56 @@
+body {
+    background-color:darkgoldenrod;
+}
+
+.box {
+    background-color: white;
+    opacity: 0.75;
+}
+
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cells {
+    display: flex;
+    border: solid black 10px;
+    background-color: darkcyan;
+    align-self: center; /* This stops auto gap from appearing on CSS grid */
+    min-height: 5em;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+h1 {
+    text-align: center;
+}
+#a1,#a2, #a3 {
+    border-left: 0px;
+}
+#c1, #c2, #c3 {
+    border-right: 0px;
+}
+#a1, #b1, #c1 {
+    border-top: 0px;
+}
+
+#a3, #b3, #c3 {
+    border-bottom: 0px;
+}
+
+.guide {
+    display: flex;
+    justify-content: center;
+}
+
+#turnBox {
+    display: flex;
+    justify-content: center;
+    border: 2px black solid;
+    background-color: aquamarine;
+}
+
+button {
+    background-color: rgb(10, 249, 229);
+}
